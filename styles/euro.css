@@ -1,0 +1,133 @@
+html {
+  background: transparent; }
+  html body {
+    margin: 0;
+    background-image: url("../images/euro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    height: 1000px; }
+
+table tbody {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+  table tbody td:not(:first-child) {
+    border-left: 1px solid #bababa; }
+  table tbody tr {
+    background-color: #eeeeee;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-shadow: #ffffff 0 1px 1px;
+    vertical-align: baseline; }
+    table tbody tr.even {
+      background-color: #cccccc; }
+    table tbody tr.move-animation {
+      -webkit-transition: all linear 1s;
+      -moz-transition: all linear 1s;
+      -ms-transition: all linear 1s;
+      -o-transition: all linear 1s;
+      transition: all linear 1s;
+      opacity: 1; }
+      table tbody tr.move-animation.ng-enter {
+        opacity: 0; }
+      table tbody tr.move-animation.ng-enter-stagger {
+        -webkit-transition-delay: 0.3s;
+        -moz-transition-delay: 0.3s;
+        -ms-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+        opacity: 0; }
+  table tbody td {
+    background-color: transparent;
+    border-bottom-width: 0;
+    border-left-style: none;
+    border-right-width: 0;
+    border-top-width: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 0;
+    vertical-align: baseline; }
+    table tbody td.nav-table-container {
+      padding: 0; }
+table .today {
+  font-weight: bold;
+  background-size: 50px 50px;
+  background-color: #BFE9F5;
+  background-image: -webkit-linear-gradient(45deg, rgba(238, 110, 115, 0.1) 25%, transparent 25%, transparent 50%, rgba(238, 110, 115, 0.1) 50%, rgba(238, 110, 115, 0.1) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(238, 110, 115, 0.1) 25%, transparent 25%, transparent 50%, rgba(238, 110, 115, 0.1) 50%, rgba(238, 110, 115, 0.1) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(238, 110, 115, 0.1) 25%, transparent 25%, transparent 50%, rgba(238, 110, 115, 0.1) 50%, rgba(238, 110, 115, 0.1) 75%, transparent 75%, transparent); }
+  table .today:hover {
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+    background: rgba(191, 233, 245, 0.5); }
+table nav ul {
+  margin: 0 auto;
+  overflow: auto;
+  box-shadow: none; }
+table .header {
+  border-top-color: #ff4000;
+  border-top-style: solid;
+  border-width: 2px 0 0;
+  font-family: 'Open Sans Condensed Bold', 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+  table .header td {
+    border-bottom: 1px solid #bababa;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    vertical-align: baseline;
+    text-align: left; }
+
+#logo {
+  width: 670px; }
+
+span {
+  color: #000080; }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/someFont.woff2") format("woff2"); }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
+/*# sourceMappingURL=euro.css.map */

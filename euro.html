@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="EuroApp">
+    <head>
+        <title>UEFA Euro 2016 Fixtures</title>
+        <!--<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css" />-->
+        <link rel="stylesheet" type="text/css" href="../bower_components/Materialize/dist/css/materialize.css" />
+        <link rel="stylesheet" type="text/css" href="../bower_components/angular-material/angular-material.css" />
+        <link rel="stylesheet" type="text/css" href="styles/euro.css"/>
+    </head>
+    <body ng-controller="EuroCtrl as vm" class="container">
+        <div class="row">
+            <table class="col s12 m12 l12">
+                <tbody>
+                <tr>
+                    <td colspan="4" class="center-align"><img src="images/euro-header.png" id="logo" alt="UEFA Euro 2016" class="responsive-img" title="UEFA Euro 2016" /></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="center-align nav-table-container">
+                        <nav>
+                            <div class="nav-wrapper valign-wrapper">
+                                <ul class="valign">
+                                    <li button class="btn btn-primary" ng-click="groupSelected = 'A'">Group A</li>
+                                    <li class="btn btn-primary waves-effect waves-light" ng-click="groupSelected = 'B'">Group B</li>
+                                    <li class="btn btn-primary waves-effect waves-light" ng-click="groupSelected = 'C'">Group C</li>
+                                    <li class="btn btn-primary waves-effect waves-light" ng-click="groupSelected = 'D'">Group D</li>
+                                    <li class="btn btn-primary waves-effect waves-light" ng-click="groupSelected = 'E'">Group E</li>
+                                    <li class="btn btn-primary waves-effect waves-light" ng-click="groupSelected = 'F'">Group F</li>
+                                    <li class="btn btn-primary waves-effect waves-light" ng-click="groupSelected = ''">All</li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </td>
+                </tr>
+                <tr class="header">
+                    <td>DATE</td>
+                    <td>MATCH</td>
+                    <td>TIME</td>
+                </tr>
+                <tr ng-repeat="fixtures in vm.euroFixtures | orderBy: 'when' | filter: {group: groupSelected}"
+                    ng-class="{'even' : fixtures.theDate % 2 && (groupSelected == '' || groupSelected == undefined), 'today': vm.todaysMatches(fixtures.when)}">
+                    <td>{{fixtures.when}}</td>
+                    <td>{{fixtures.home}} v. {{fixtures.away}} <strong>(Group {{fixtures.group}})</strong></td>
+                    <td>{{fixtures.time}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/Materialize/dist/js/materialize.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-material/angular-material.js"></script>
+    <!--<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
+    <script type="text/javascript" src="../bower_components/lodash/lodash.js"></script>
+    <script type="text/javascript" src="../bower_components/moment/moment.js"></script>
+    <script type="text/javascript" src="scripts/euro.js"></script>
+    </body>
+</html>
