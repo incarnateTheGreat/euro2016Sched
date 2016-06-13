@@ -24,6 +24,12 @@
     function EuroCtrl(euroTableFactory) {
         const vm = this;
         const today = moment();
+        const format = {
+            when: "DD MMMM",
+            theDate: "DD",
+            time: "HH.mm",
+            dateFormat: "d"
+        };
 
         vm.todaysMatches = todaysMatches;
         vm.buildFixtureTable = buildFixtureTable;
@@ -54,16 +60,16 @@
 
                     val.home = homeTeam[0].name;
                     val.away = awayTeam[0].name;
-                    val.when = moment(matchDate).format("DD MMMM");
-                    val.theDate = moment(matchDate).format("DD");
-                    val.time = (moment(matchDate).format("HH.mm"));
+                    val.when = moment(matchDate).format(format.when);
+                    val.theDate = moment(matchDate).format(format.theDate);
+                    val.time = (moment(matchDate).format(format.time));
                 });
             });
         }
 
         function todaysMatches(o) {
-            let matchDate = moment(o, "DD MMMM");
-            if (today.isSame(moment(matchDate), "d")) return true;
+            let matchDate = moment(o, format.when);
+            if (today.isSame(moment(matchDate), format.dateFormat)) return true;
         }
     }
 }());
