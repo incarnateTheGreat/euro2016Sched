@@ -8,7 +8,7 @@
         const jsondata = {
             get: function () {
                 if (!promise) {
-                    promise = $http.get("src/euro2016.json").success(function (response) {
+                    promise = $http.get("src/euro2016_knockout.json").success(function (response) {
                         return response.data;
                     });
                     return promise;
@@ -45,16 +45,20 @@
         function buildFixtureTable() {
             euroTableFactory.get().then(function (d) {
                 vm.euroFixtures = d.data.matches;
-                var teams = d.data.teams;
+                var teams = d.data.teams,
+                    matchDate = "",
+                    homeTeam = "",
+                    awayTeam = "";
+
 
                 _.forEach(vm.euroFixtures, function (val) {
-                    var matchDate = val.when;
+                    matchDate = val.when;
 
-                    var homeTeam = _.filter(teams, function (o) {
+                    homeTeam = _.filter(teams, function (o) {
                         return o.code == val.home ? o.name : "";
                     });
 
-                    var awayTeam = _.filter(teams, function (o) {
+                    awayTeam = _.filter(teams, function (o) {
                         return o.code == val.away ? o.name : "";
                     });
 
