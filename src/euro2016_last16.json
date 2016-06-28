@@ -1,0 +1,50 @@
+{
+    "teams": [
+        {"code": "FRA", "name": "France"},
+        {"code": "ROU", "name": "Romania"},
+        {"code": "ALB", "name": "Albania"},
+        {"code": "SUI", "name": "Switzerland"},
+        {"code": "ENG", "name": "England"},
+        {"code": "RUS", "name": "Russia"},
+        {"code": "WAL", "name": "Wales"},
+        {"code": "SVK", "name": "Slovakia"},
+        {"code": "GER", "name": "Germany"},
+        {"code": "UKR", "name": "Ukraine"},
+        {"code": "POL", "name": "Poland"},
+        {"code": "NIR", "name": "Northern Ireland"},
+        {"code": "ESP", "name": "Spain"},
+        {"code": "CZE", "name": "Czech Republic"},
+        {"code": "TUR", "name": "Turkey"},
+        {"code": "CRO", "name": "Croatia"},
+        {"code": "BEL", "name": "Belgium"},
+        {"code": "ITA", "name": "Italy"},
+        {"code": "IRL", "name": "Republic of Ireland"},
+        {"code": "SWE", "name": "Sweden"},
+        {"code": "POR", "name": "Portugal"},
+        {"code": "ISL", "name": "Iceland"},
+        {"code": "AUT", "name": "Austria"},
+        {"code": "HUN", "name": "Hungary"}
+    ],
+    "types": [
+        {"code": "A", "name": "Group A"},
+        {"code": "B", "name": "Group B"},
+        {"code": "C", "name": "Group C"},
+        {"code": "D", "name": "Group D"},
+        {"code": "E", "name": "Group E"},
+        {"code": "F", "name": "Group F"},
+        {"code": "R16", "name": "Round of 16"},
+        {"code": "QF", "name": "Quarter-final"},
+        {"code": "SF", "name": "Semi-final"},
+        {"code": "F", "name": "Final"}
+    ],
+    "matches": [
+        {"home": "SUI", "away": "POL", "when": "2016-06-25T15:00+02:00"},
+        {"home": "WAL", "away": "NIR", "when": "2016-06-25T18:00+02:00"},
+        {"home": "CRO", "away": "POR", "when": "2016-06-25T21:00+02:00"},
+        {"home": "FRA", "away": "IRL", "when": "2016-06-26T15:00+02:00"},
+        {"home": "GER", "away": "SVK", "when": "2016-06-26T18:00+02:00"},
+        {"home": "HUN", "away": "BEL", "when": "2016-06-26T21:00+02:00"},
+        {"home": "ITA", "away": "ESP", "when": "2016-06-27T18:00+02:00"},
+        {"home": "ENG", "away": "ISL", "when": "2016-06-27T21:00+02:00"}
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "teams": [
+        {"code": "FRA", "name": "France"},
+        {"code": "ROU", "name": "Romania"},
+        {"code": "ALB", "name": "Albania"},
+        {"code": "SUI", "name": "Switzerland"},
+        {"code": "ENG", "name": "England"},
+        {"code": "RUS", "name": "Russia"},
+        {"code": "WAL", "name": "Wales"},
+        {"code": "SVK", "name": "Slovakia"},
+        {"code": "GER", "name": "Germany"},
+        {"code": "UKR", "name": "Ukraine"},
+        {"code": "POL", "name": "Poland"},
+        {"code": "NIR", "name": "Northern Ireland"},
+        {"code": "ESP", "name": "Spain"},
+        {"code": "CZE", "name": "Czech Republic"},
+        {"code": "TUR", "name": "Turkey"},
+        {"code": "CRO", "name": "Croatia"},
+        {"code": "BEL", "name": "Belgium"},
+        {"code": "ITA", "name": "Italy"},
+        {"code": "IRL", "name": "Republic of Ireland"},
+        {"code": "SWE", "name": "Sweden"},
+        {"code": "POR", "name": "Portugal"},
+        {"code": "ISL", "name": "Iceland"},
+        {"code": "AUT", "name": "Austria"},
+        {"code": "HUN", "name": "Hungary"}
+    ],
+    "types": [
+        {"code": "A", "name": "Group A"},
+        {"code": "B", "name": "Group B"},
+        {"code": "C", "name": "Group C"},
+        {"code": "D", "name": "Group D"},
+        {"code": "E", "name": "Group E"},
+        {"code": "F", "name": "Group F"},
+        {"code": "R16", "name": "Round of 16"},
+        {"code": "QF", "name": "Quarter-final"},
+        {"code": "SF", "name": "Semi-final"},
+        {"code": "F", "name": "Final"}
+    ],
+    "matches": [
+        {"home": "POL", "away": "POR", "when": "2016-06-30T21:00+02:00"},
+        {"home": "WAL", "away": "BEL", "when": "2016-07-01T21:00+02:00"},
+        {"home": "GER", "away": "ITA", "when": "2016-07-02T21:00+02:00"},
+        {"home": "FRA", "away": "ISL", "when": "2016-07-03T21:00+02:00"}
+    ]
+}
