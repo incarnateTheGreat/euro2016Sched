@@ -8,7 +8,7 @@
         const jsondata = {
             get: function () {
                 if (!promise) {
-                    promise = $http.get("src/euro2016_knockout.json").success(function (response) {
+                    promise = $http.get("src/euro2016_QF.json").success(function (response) {
                         return response.data;
                     });
                     return promise;
