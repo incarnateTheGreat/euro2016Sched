@@ -35,7 +35,7 @@
                     <td>MATCH</td>
                     <td>TIME</td>
                 </tr>
-                <tr ng-repeat="fixtures in vm.euroFixtures | orderBy: 'when' | filter: {group: groupSelected}"
+                <tr ng-repeat="fixtures in vm.euroFixtures | filter: {group: groupSelected}"
                     ng-class="{'even' : fixtures.theDate % 2 && (groupSelected == '' || groupSelected == undefined), 'today': vm.todaysMatches(fixtures.when)}">
                     <td>{{fixtures.when}}</td>
                     <td>{{fixtures.home}} v. {{fixtures.away}}</td>
